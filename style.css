@@ -1,0 +1,110 @@
+/* 🎨 Tema Oscuro (por defecto) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#chat-container {
+  width: 100%;
+  max-width: 600px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.user-msg, .ai-msg {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.user-msg {
+  background: #4CAF50;
+  color: white;
+  margin-left: auto;
+}
+
+.ai-msg {
+  background: #333;
+  color: #ddd;
+  margin-right: auto;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* 🌞 Tema Claro (se activa con .light-mode en body) */
+body.light-mode {
+  background: #f0f0f0;
+  color: #222;
+}
+
+body.light-mode #chat-container {
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+body.light-mode #messages {
+  background: #f9f9f9;
+}
+
+body.light-mode .ai-msg {
+  background: #e0e0e0;
+  color: #222;
+}
+
+body.light-mode .user-msg {
+  background: #2196F3;
+}
+
+body.light-mode button {
+  background: #2196F3;
+}
+
+body.light-mode button:hover {
+  background: #1976D2;
+}
